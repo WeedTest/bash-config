@@ -1,12 +1,12 @@
 #!/bin/bash
 
+if [ -d ~/.bash/vendor ]; then
+    . ~/.bash/vendor/sensible.bash
+    . ~/.bash/vendor/ble-nightly/ble.sh
+fi
+
 if test "$(gsettings get org.gnome.desktop.interface color-scheme)" = "'prefer-dark'"; then
     eval "$(oh-my-posh init bash --config ~/.poshthemes/tiwahu.omp.json)"
 else
     eval "$(oh-my-posh init bash --config ~/.poshthemes/spaceship.omp.json)"
-fi
-
-if [ -d ~/.bash/vendor ]; then
-    . ~/.bash/vendor/sensible.bash
-    . ~/.bash/vendor/ble-nightly/ble.sh
 fi
