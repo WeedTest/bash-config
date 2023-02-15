@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export MANAGER_TEMPLATES_LARAVEL="/home/llyam/lab/tools/manager/templates/laravel";
+
+export ANDROID_SDK_ROOT="/home/llyam/lab/tools/android";
+export ANDROID_HOME=$ANDROID_SDK_ROOT;
+
+export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin";
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator;
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools;
+export PATH=$PATH:/home/llyam/.config/composer/vendor/bin/
